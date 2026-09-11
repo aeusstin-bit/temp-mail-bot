@@ -1,3 +1,4 @@
+import os
 import re
 import random
 import string
@@ -13,7 +14,7 @@ from telegram.ext import (
 # ═══════════════════════════════════════════
 # CONFIG
 # ═══════════════════════════════════════════
-BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "YOUR_BOT_TOKEN_HERE")
 
 MAILTM_BASE = "https://api.mail.tm"
 HEADERS = {
